@@ -14,7 +14,8 @@ import { setContext } from '@apollo/client/link/context';
 import { AuthService } from './services/auth.service';
 import { map, Observable, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
-
+import { AddBillComponent } from './pages/add-bill/add-bill.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 // function initializeApp(authService: AuthService): Promise<any> {
@@ -81,8 +82,8 @@ export function createApollo(httpLink: HttpLink) {
 
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, ApolloModule, HttpClientModule],
+  declarations: [AppComponent, HomeComponent, AddBillComponent],
+  imports: [BrowserModule,  ReactiveFormsModule, AppRoutingModule, ApolloModule, HttpClientModule],
   providers: [
     {
       provide: APP_INITIALIZER,

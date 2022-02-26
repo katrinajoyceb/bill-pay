@@ -30,11 +30,7 @@ export class HomeComponent implements OnInit {
     //this.getToken();
   }
 
-  getToken(){
-    this.authService.getToken().subscribe(result => {
-      console.log(result);
-    })
-  }
+  
 
   getAccounts(){
     this.apollo.watchQuery({
