@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  tokenUri: "https://realm.mongodb.com/api/client/v2.0/app/testapplication-dleve/auth/providers/api-key/login",
+  apiKey: "dPwjZHmUmvkWVtIIPwhxuwEg9EgCryvXZscOmyFEOOpdZaBxcuKJyvaJsKzWFAnl",
+  graphQlUri: "https://realm.mongodb.com/api/client/v2.0/app/testapplication-dleve/graphql"
 };
 
 /*
